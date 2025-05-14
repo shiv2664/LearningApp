@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_centerInParent="true"
+            android:id="@+id/lottiAnimeSuccess"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:visibility="gone"
+            android:elevation="1dp"
+            app:lottie_rawRes="@raw/welldone"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/nextHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hint"
+            app:backgroundTint="@null"
+            android:background="@drawable/buttonorange"
+            android:layout_marginBottom="36dp"
+            android:layout_marginStart="36dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/nextBTn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="next"
+            app:backgroundTint="@null"
+            android:background="@drawable/buttongreen"
+            android:layout_marginBottom="36dp"
+            android:layout_marginEnd="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:background="@drawable/twf_background_blur"/>
+
+        <RelativeLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="252dp"
+                android:fontFamily="@font/berlinsans"
+                android:text="correct the order..."
+                android:textColor="@color/colorTextWhite"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_toStartOf="@+id/normal_level"
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/berlinsans"
+                android:text="1"
+                android:textColor="@color/colorTextWhite"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_marginEnd="15dp"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/normal_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/berlinsans"
+                android:text="/5"
+                android:textColor="@color/colorTextWhite"
+                android:textSize="24sp"/>
+
+            <Button
+                android:layout_alignBaseline="@+id/normal_level"
+                android:layout_toStartOf="@+id/normal_level"
+                android:id="@+id/volume"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/volon"
+                android:text="0"
+                android:textSize="0dp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/guideTextView"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/headerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.4"
+            android:text="Drag and drop words here in the correct order"
+            android:fontFamily="@font/berlinsans"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="24sp"/>
+
+
+        <LinearLayout
+            android:layout_below="@+id/headerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="10"
+            android:background="@color/transparent"
+            android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/empty_list_text_view_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#E4E4E4"
+                    android:gravity="center"
+                    android:text="List1 is Empty!"
+                    android:textSize="17sp"
+                    android:visibility="gone"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layoutAnimation="@anim/layout_animation_fall_down"
+                    android:layout_weight="5"
+                    android:id="@+id/recycler_view_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"/>
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+            <!--        <View-->
+            <!--            android:id="@+id/divider"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="1dp"-->
+            <!--            android:background="#cccccc"-->
+            <!--            app:layout_constraintTop_toBottomOf="@id/recycler_view_1" />-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_weight="5"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_marginEnd="10dp"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                app:cardCornerRadius="20dp">-->
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layoutAnimation="@anim/layout_animation_fall_down"
+                    android:layout_weight="5"
+                    android:id="@+id/recycler_view_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/empty_list_text_view_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="#E4E4E4"
+                    android:gravity="center"
+                    android:text="List2 is Empty!"
+                    android:textSize="17sp"
+                    android:visibility="gone"/>
+        </LinearLayout>
+
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progressBarGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+
+
+        <TextView
+            android:id="@+id/hintTextView"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/berlinsans"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:textSize="40sp"/>
+
+    </RelativeLayout>
+</layout>

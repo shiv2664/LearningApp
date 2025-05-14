@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/reativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/twf_background_blur">
+
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_toStartOf="@+id/textView7"
+                    android:id="@+id/Score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/berlinsans"
+                    android:text="Score :"
+                    android:textColor="@color/colorTextWhite"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_toStartOf="@+id/normal_level"
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/berlinsans"
+                    android:text="0"
+                    android:textColor="@color/colorTextWhite"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_marginEnd="15dp"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/normal_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/berlinsans"
+                    android:text="/100"
+                    android:textColor="@color/colorTextWhite"
+                    android:textSize="24sp"/>
+
+                <Button
+                    android:layout_alignBaseline="@+id/normal_level"
+                    android:layout_toStartOf="@+id/Score"
+                    android:id="@+id/volume"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/volon"
+                    android:text="0"
+                    android:textSize="0sp"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_below="@+id/normal_level"
+                    android:id="@+id/cardView"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:layout_centerHorizontal="true"
+                    app:cardCornerRadius="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    >
+
+                <ImageView
+                    android:id="@+id/imageviewAlphabet"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart" />
+                </androidx.cardview.widget.CardView>
+
+
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/buttonCard1_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="28dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/option_a"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/berlinsans"
+                        android:gravity="center"
+                        android:text="Apple"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/buttona"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/circlepurple"
+                        android:fontFamily="@font/berlinsans"
+                        android:gravity="center"
+                        android:text="A"
+                        android:textColor="@color/colorTextWhite"
+                        android:textSize="22sp" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/buttonCard2_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="28dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/buttonb"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/circlepurple"
+                        android:fontFamily="@font/berlinsans"
+                        android:gravity="center"
+                        android:text="B"
+                        android:textColor="@color/colorTextWhite"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/option_b"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/berlinsans"
+                        android:gravity="center"
+                        android:text="Cat"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="24sp" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/buttonCard3_c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="28dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/buttonc"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/circlepurple"
+                        android:fontFamily="@font/berlinsans"
+                        android:gravity="center"
+                        android:text="C"
+                        android:textColor="@color/colorTextWhite"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/option_c"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/berlinsans"
+                        android:gravity="center"
+                        android:text="Lion"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="24sp" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/buttonCard4_d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="28dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/buttond"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/circlepurple"
+                        android:fontFamily="@font/berlinsans"
+                        android:gravity="center"
+                        android:text="D"
+                        android:textColor="@color/colorTextWhite"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/option_d"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/berlinsans"
+                        android:gravity="center"
+                        android:text="Dog"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="24sp" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+<!--            <com.google.android.material.button.MaterialButton-->
+<!--                android:layout_marginTop="24dp"-->
+<!--                android:layout_gravity="end"-->
+<!--                android:id="@+id/next"-->
+<!--                style="?android:attr/borderlessButtonStyle"-->
+<!--                android:layout_width="120dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginEnd="16dp"-->
+<!--                android:layout_marginBottom="32dp"-->
+<!--                app:backgroundTint="@null"-->
+<!--                android:background="@drawable/buttonorange"-->
+<!--                android:fontFamily="@font/berlinlight"-->
+<!--                android:text="Next"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textSize="24sp"/>-->
+
+        </LinearLayout>
+
+<!-- sample       ca-app-pub-3940256099942544/6300978111-->
+        <!--<com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-8438387212221904/6804874789">
+        </com.google.android.gms.ads.AdView>-->
+
+<!--        <com.airbnb.lottie.LottieAnimationView-->
+<!--            android:id="@+id/lottieloadinggame"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:layout_height="200dp"-->
+<!--            app:lottie_rawRes="@raw/girrafloading"-->
+<!--            android:layout_gravity="end"-->
+<!--            app:lottie_autoPlay="true"-->
+<!--            app:lottie_loop="true" />-->
+
+    </RelativeLayout>
+</layout>

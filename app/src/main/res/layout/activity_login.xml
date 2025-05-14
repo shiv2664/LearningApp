@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".LoginActivity">
+
+
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/blue_bg" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/imageView"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp">
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Learning App"
+                        android:textStyle="italic"
+                        android:textColor="@color/colorTextWhite"
+                        android:textSize="40dp" />
+
+                    <TextView
+                        android:layout_below="@+id/textView1"
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Where learning gets fun!!"
+                        android:textStyle="italic"
+                        android:textColor="@color/colorTextWhite"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layoutAnimation="@anim/layout_animation_fall_down"
+                >
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+
+            <ImageButton
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:id="@+id/login_google"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/google"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="10dp" />
+
+            <ImageButton
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:id="@+id/login_facebook"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/facebook"
+                android:scaleType="centerInside"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="10dp" />
+
+            <ImageButton
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:id="@+id/login_twitter"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/twitter"
+                android:scaleType="centerInside"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="10dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</layout>

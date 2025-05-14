@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:background="@drawable/twf_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<!--        <RelativeLayout-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/image_text_shadow_bottom">-->
+<!--        </RelativeLayout>-->
+
+<!--        android:layoutAnimation="@anim/layout_animation_fall_down"-->
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="64dp"
+                android:paddingEnd="28dp"
+                android:paddingStart="28dp"
+                android:fontFamily="@font/berlinsans"
+                android:gravity="center"
+                android:text="Congratulations! You have learned 5 new words!"
+                android:textColor="@color/colorWhite"
+                android:textSize="44sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/PlayNext"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingStart="48dp"
+                android:paddingEnd="48dp"
+                android:layout_marginTop="32dp"
+                app:backgroundTint="@null"
+                android:background="@drawable/buttongreen"
+                android:fontFamily="@font/berlinsans"
+                android:text="Play Again"
+                android:textColor="@color/colorWhite"
+                android:textSize="24sp"
+                android:textAllCaps="false" />
+
+            <com.google.android.material.button.MaterialButton
+                style="?android:attr/borderlessButtonStyle"
+                android:id="@+id/GoBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingStart="48dp"
+                android:paddingEnd="48dp"
+                android:layout_marginTop="16dp"
+                app:backgroundTint="@null"
+                android:background="@drawable/buttonorange"
+                android:fontFamily="@font/berlinsans"
+                android:gravity="center"
+                android:text="Go Back"
+                android:textColor="@color/colorWhite"
+                android:textSize="24sp"
+                android:textAllCaps="false"/>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottieanimmonkey"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="300dp"
+                app:lottie_rawRes="@raw/tiger"
+                android:layout_gravity="end"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true" />
+
+
+        </LinearLayout>
+
+
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:layout_marginBottom="20dp"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            style="?android:attr/borderlessButtonStyle"-->
+<!--            android:id="@+id/Results"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:paddingStart="48dp"-->
+<!--            android:paddingEnd="48dp"-->
+<!--            app:backgroundTint="@null"-->
+<!--            android:fontFamily="@font/berlinsans"-->
+<!--            android:gravity="center"-->
+<!--            android:text="See Answers"-->
+<!--            android:textColor="@color/colorWhite"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="30sp"-->
+<!--            android:textAllCaps="false"/>-->
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieanimecongo"
+            android:layout_width="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_height="300dp"
+            app:lottie_rawRes="@raw/conffeti"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentcontainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </androidx.fragment.app.FragmentContainerView>
+
+    </RelativeLayout>
+</layout>

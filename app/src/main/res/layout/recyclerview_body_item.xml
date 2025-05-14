@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:paddingTop="35dp"
+        android:paddingBottom="35dp"
+        android:paddingStart="2dp"
+        android:paddingEnd="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/roundedImageView"
+            android:layout_width="match_parent"
+            android:layout_height="560dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/head"
+            android:scaleType="fitXY"
+            app:shapeAppearanceOverlay="@style/roundimageview" />
+
+        <RelativeLayout
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:id="@+id/react_layout"
+            android:background="@drawable/image_text_shadow_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/roundedImageView">
+            <ImageView
+                android:layout_alignParentEnd="true"
+                android:id="@+id/speakerbody"
+                android:background="@drawable/volon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:fontFamily="@font/berlinsans"
+                android:textColor="@color/colorWhite"
+                android:textSize="30sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>

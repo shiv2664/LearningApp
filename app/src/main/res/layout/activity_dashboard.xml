@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<RelativeLayout
+    android:background="@drawable/twf_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="70dp"
+        android:id="@+id/lottieanimdashboard"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:lottie_rawRes="@raw/birdflying"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true" />
+
+<!--    android:layoutAnimation="@anim/layout_animation_fall_down"-->
+        <LinearLayout
+            android:layoutAnimation="@anim/layout_animation_fall_down"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="@color/transparent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:visibility="gone"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:fontFamily="@font/berlinsans"
+                    android:textColor="@color/colorWhite"
+                    android:backgroundTint="@null"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/button_help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:text="Sign Out" />
+
+                <Button
+                   android:layout_alignBaseline="@+id/button_help"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/volume"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/volon"
+                    android:textSize="0sp"/>
+
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/berlinsans"
+                android:text="Lets Make Learning Fun!"
+                android:textColor="@color/colorWhite"
+                android:textSize="40sp"/>
+
+            <RelativeLayout
+                android:id="@+id/buttonlearn"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:elevation="3dp"
+                android:layout_marginTop="24dp">
+
+                <ImageView
+                    android:layout_marginStart="18dp"
+                    android:layout_marginEnd="18dp"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/buttongreen"
+                    android:layout_height="150dp"/>
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/lottieanimlogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:lottie_rawRes="@raw/book"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="19dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="20dp"
+                    app:contentPadding="7dp">
+                    <TextView
+                        android:fontFamily="@font/berlinsans"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="   Learn  "
+                        android:textColor="@color/ungu"/>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="150dp">
+
+                <ImageView
+                    android:layout_marginStart="18dp"
+                    android:layout_marginEnd="10dp"
+                    android:id="@+id/Game2"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:adjustViewBounds="true"
+                    android:padding="3dp"
+                    android:scaleType="fitStart"
+                    android:background="@drawable/buttonpurple"/>
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottieanimgame"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:lottie_rawRes="@raw/gamingcontroler"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="19dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="20dp"
+                        app:contentPadding="7dp">
+                        <TextView
+                            android:fontFamily="@font/berlinsans"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:text="   Game  "
+                            android:textColor="@color/ungu"/>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_marginStart="10dp"
+                        android:id="@+id/button_adv"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitEnd"
+                        android:background="@drawable/buttonorange" />
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottieanimeadv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:lottie_rawRes="@raw/locked"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true" />
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/lottieaniadv"-->
+<!--                        android:fontFamily="@font/berlinsans"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:text="Advance"-->
+<!--                        android:textColor="@color/colorWhite"-->
+<!--                        android:layout_centerInParent="true"-->
+<!--                        android:layout_height="wrap_content"/>-->
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="19dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="20dp"
+                        app:contentPadding="7dp">
+                        <TextView
+                            android:fontFamily="@font/berlinsans"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:text="   Adv  "
+                            android:textColor="@color/ungu"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/button_coming_soon"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:elevation="3dp"
+                android:layout_marginTop="24dp">
+
+                <ImageView
+                    android:layout_marginStart="18dp"
+                    android:layout_marginEnd="18dp"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/buttonblue"
+                    android:layout_height="150dp"/>
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/lottieanimcomingsoon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:lottie_rawRes="@raw/comingsoon"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="19dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="20dp"
+                    app:contentPadding="7dp">
+                    <TextView
+                        android:fontFamily="@font/berlinsans"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="   Coming soon  "
+                        android:textColor="@color/ungu"/>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/alphabetsPlayground"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="24dp"-->
+<!--                    android:layout_marginBottom="32dp"-->
+<!--                    android:adjustViewBounds="true"-->
+<!--                    android:scaleType="fitXY"-->
+<!--                    android:src="@drawable/buttoniklan" />-->
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:layout_alignParentStart="true"-->
+<!--                    android:layout_marginTop="35dp"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:contentPadding="10dp"-->
+<!--                    app:cardCornerRadius="20dp">-->
+<!--                    <TextView-->
+<!--                        android:fontFamily="@font/berlinsans"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textSize="20sp"-->
+<!--                        android:text="   Alphabet Playground  "-->
+<!--                        android:singleLine="true"-->
+<!--                        android:textColor="@color/ungu"/>-->
+
+<!--                </androidx.cardview.widget.CardView>-->
+
+<!--            </RelativeLayout>-->
+
+        </LinearLayout>
+
+</RelativeLayout>
+<!--    </ScrollView>-->
+</layout>

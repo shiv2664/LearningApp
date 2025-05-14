@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:paddingTop="35dp"
+        android:paddingBottom="35dp"
+        android:paddingStart="2dp"
+        android:paddingEnd="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/roundedImageView"
+            android:layout_width="match_parent"
+            android:layout_height="560dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/liberty"
+            android:scaleType="fitXY"
+            app:shapeAppearanceOverlay="@style/roundimageview" />
+
+        <RelativeLayout
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:id="@+id/react_layout"
+            android:background="@drawable/image_text_shadow_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/roundedImageView">
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/berlinsans"
+                android:textColor="@color/colorWhite"
+                android:text="The Statue of Liberty"
+                android:textSize="30sp" />
+            <TextView
+                android:padding="4dp"
+                android:id="@+id/place"
+                android:layout_below="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/berlinsans"
+                android:textColor="@color/colorWhite"
+                android:text="New York, USA"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <!--    app:backgroundImage="@drawable/liberty"-->
+</layout>

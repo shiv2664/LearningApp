@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/twf_background_blur">
+
+        <Button
+            android:layout_alignParentStart="true"
+            android:id="@+id/buttonback"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/arrowbackbutton"
+            android:padding="16dp"/>
+
+        <TextView
+            android:layout_toEndOf="@+id/buttonback"
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/berlinsans"
+            android:text="learn alphabets"
+            android:textColor="@color/colorTextWhite"
+            android:textSize="26sp" />
+
+
+        <ScrollView
+            android:id="@+id/left_scroll_view"
+            android:layout_below="@id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/huruf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    android:layout_marginStart="64dp"
+                    android:fontFamily="@font/berlinsans"
+                    android:textColor="@color/colorTextWhite"
+                    android:textSize="44sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/bahasa_inggris"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="64dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Apple"
+                        android:fontFamily="@font/berlinsans"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="34sp"/>
+
+                    <ImageView
+                        android:id="@+id/speaker1"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/volon"
+                        android:layout_toEndOf="@+id/bahasa_inggris"
+                        android:layout_alignBottom="@+id/bahasa_inggris"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/bahasa_indo"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="64dp"
+                    android:fontFamily="@font/berlinlight"
+                    android:text=""
+                    android:textColor="@color/textgreen"
+                    android:textSize="24sp" />
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/imageCardView"
+                        android:layout_width="0dp"
+                        android:layout_weight="8"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="20dp">
+                        <ImageView
+                            android:id="@+id/gambar"
+                            android:layout_width="match_parent"
+                            android:layout_height="280dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/huruf2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    android:layout_marginStart="64dp"
+                    android:fontFamily="@font/berlinsans"
+                    android:textColor="@color/colorTextWhite"
+                    android:textSize="44sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/bahasa_inggris2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="64dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Apple"
+                        android:fontFamily="@font/berlinsans"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="34sp"/>
+
+                    <ImageView
+                        android:id="@+id/speaker2"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/volon"
+                        android:layout_toEndOf="@+id/bahasa_inggris2"
+                        android:layout_alignBottom="@+id/bahasa_inggris2"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/bahasa_indo2"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="64dp"
+                    android:fontFamily="@font/berlinlight"
+                    android:text=""
+                    android:textColor="@color/textgreen"
+                    android:textSize="34sp" />
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/imageCardView2"
+                        android:layout_width="0dp"
+                        android:layout_weight="8"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="20dp">
+                        <ImageView
+                            android:id="@+id/gambar2"
+                            android:layout_width="match_parent"
+                            android:layout_height="280dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/huruf3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    android:layout_marginStart="64dp"
+                    android:fontFamily="@font/berlinsans"
+                    android:textColor="@color/colorTextWhite"
+                    android:textSize="44sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/bahasa_inggris3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="64dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Apple"
+                        android:fontFamily="@font/berlinsans"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="34sp"/>
+
+                    <ImageView
+                        android:id="@+id/speaker3"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/volon"
+                        android:layout_toEndOf="@+id/bahasa_inggris3"
+                        android:layout_alignBottom="@+id/bahasa_inggris3"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/bahasa_indo3"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="64dp"
+                    android:fontFamily="@font/berlinlight"
+                    android:text=""
+                    android:textColor="@color/textgreen"
+                    android:textSize="24sp" />
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/imageCardView3"
+                        android:layout_width="0dp"
+                        android:layout_weight="8"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="20dp">
+                        <ImageView
+                            android:id="@+id/gambar3"
+                            android:layout_width="match_parent"
+                            android:layout_height="280dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/huruf4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    android:layout_marginStart="64dp"
+                    android:fontFamily="@font/berlinsans"
+                    android:textColor="@color/colorTextWhite"
+                    android:textSize="44sp" />
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/bahasa_inggris4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="64dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Apple"
+                        android:fontFamily="@font/berlinsans"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="34sp"/>
+
+                    <ImageView
+                        android:id="@+id/speaker4"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/volon"
+                        android:layout_toEndOf="@+id/bahasa_inggris4"
+                        android:layout_alignBottom="@+id/bahasa_inggris4"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/bahasa_indo4"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="64dp"
+                    android:fontFamily="@font/berlinlight"
+                    android:text=""
+                    android:textColor="@color/textgreen"
+                    android:textSize="24sp" />
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/imageCardView4"
+                        android:layout_width="0dp"
+                        android:layout_weight="8"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="20dp">
+                        <ImageView
+                            android:id="@+id/gambar4"
+                            android:layout_width="match_parent"
+                            android:layout_height="280dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+
+
+        <ScrollView
+            android:layout_alignParentEnd="true"
+            android:id="@+id/scrollview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="64dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    app:backgroundTint="@null"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:id="@+id/button_a"
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/buttonalfabeth"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/berlinsans"
+                    android:text="A"
+                    android:textSize="22sp" />
+
+                <Button
+                    app:backgroundTint="@null"
+                    android:stateListAnimator="@null"
+                    android:id="@+id/button_b"
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/buttonalfabeth"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/berlinsans"
+                    android:text="B"
+                    android:textSize="22sp" />
+
+                <Button
+                    app:backgroundTint="@null"
+                    android:id="@+id/button_c"
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/buttonalfabeth"
+                    android:textColor="@android:color/white"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:fontFamily="@font/berlinsans"
+                    android:text="C"
+                    android:textSize="22sp" />
+
+                <Button
+                    app:backgroundTint="@null"
+                    android:id="@+id/button_d"
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/buttonalfabeth"
+                    android:textColor="@android:color/white"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:fontFamily="@font/berlinsans"
+                    android:text="D"
+                    android:textSize="22sp" />
+
+                <Button
+                    app:backgroundTint="@null"
+                    android:id="@+id/button_E"
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/buttonalfabeth"
+                    android:textColor="@android:color/white"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:fontFamily="@font/berlinsans"
+                    android:text="E"
+                    android:textSize="22sp" />
+
+                <Button
+                    app:backgroundTint="@null"
+                    android:id="@+id/button_f"
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/buttonalfabeth"
+                    android:textColor="@android:color/white"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:fontFamily="@font/berlinsans"
+                    android:text="F"
+                    android:textSize="22sp" />
+
+                <Button
+                    app:backgroundTint="@null"
+                    android:id="@+id/button_g"
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/buttonalfabeth"
+                    android:textColor="@android:color/white"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:fontFamily="@font/berlinsans"
+                    android:text="G"
+                    android:textSize="22sp" />
+
+                <Button
+                    app:backgroundTint="@null"
+                    android:id="@+id/button_h"
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/buttonalfabeth"
+                    android:textColor="@android:color/white"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:fontFamily="@font/berlinsans"
+                    android:text="H"
+                    android:textSize="22sp" />
+
+                <Button
+                    app:backgroundTint="@null"
+                    android:id="@+id/button_i"
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/buttonalfabeth"
+                    android:textColor="@android:color/white"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:fontFamily="@font/berlinsans"
+                    android:text="I"
+                    android:textSize="22sp" />
+
+                <Button
+                    app:backgroundTint="@null"
+                    android:id="@+id/button_j"
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/buttonalfabeth"
+                    android:textColor="@android:color/white"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:fontFamily="@font/berlinsans"
+                    android:text="J"
+                    android:textSize="22sp" />
+
+                <Button
+                    app:backgroundTint="@null"
+                    android:id="@+id/button_k"
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/buttonalfabeth"
+                    android:textColor="@android:color/white"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:fontFamily="@font/berlinsans"
+                    android:text="K"
+                    android:textSize="22sp" />
+
+                <Button
+                    app:backgroundTint="@null"
+                    android:id="@+id/button_l"
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/buttonalfabeth"
+                    android:textColor="@android:color/white"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:fontFamily="@font/berlinsans"
+                    android:text="L"
+                    android:textSize="22sp" />
+
+                <Button
+                    app:backgroundTint="@null"
+                    android:id="@+id/button_m"
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/buttonalfabeth"
+                    android:textColor="@android:color/white"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:fontFamily="@font/berlinsans"
+                    android:text="M"
+                    android:textSize="22sp" />
+
+                <Button
+                    app:backgroundTint="@null"
+                    android:id="@+id/button_n"
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/buttonalfabeth"
+                    android:textColor="@android:color/white"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:fontFamily="@font/berlinsans"
+                    android:text="N"
+                    android:textSize="22sp" />
+
+                <Button
+                    app:backgroundTint="@null"
+                    android:id="@+id/button_o"
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/buttonalfabeth"
+                    android:textColor="@android:color/white"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:fontFamily="@font/berlinsans"
+                    android:text="O"
+                    android:textSize="22sp" />
+
+                <Button
+                    app:backgroundTint="@null"
+                    android:id="@+id/button_p"
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/buttonalfabeth"
+                    android:textColor="@android:color/white"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:fontFamily="@font/berlinsans"
+                    android:text="P"
+                    android:textSize="22sp" />
+
+                <Button
+                    app:backgroundTint="@null"
+                    android:id="@+id/button_q"
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/buttonalfabeth"
+                    android:textColor="@android:color/white"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:fontFamily="@font/berlinsans"
+                    android:text="Q"
+                    android:textSize="22sp" />
+
+                <Button
+                    app:backgroundTint="@null"
+                    android:id="@+id/button_r"
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/buttonalfabeth"
+                    android:textColor="@android:color/white"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:fontFamily="@font/berlinsans"
+                    android:text="R"
+                    android:textSize="22sp" />
+
+                <Button
+                    app:backgroundTint="@null"
+                    android:id="@+id/button_s"
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/buttonalfabeth"
+                    android:textColor="@android:color/white"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:fontFamily="@font/berlinsans"
+                    android:text="S"
+                    android:textSize="22sp" />
+
+                <Button
+                    app:backgroundTint="@null"
+                    android:id="@+id/button_t"
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/buttonalfabeth"
+                    android:textColor="@android:color/white"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:fontFamily="@font/berlinsans"
+                    android:text="T"
+                    android:textSize="22sp" />
+
+                <Button
+                    app:backgroundTint="@null"
+                    android:id="@+id/button_u"
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/buttonalfabeth"
+                    android:textColor="@android:color/white"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:fontFamily="@font/berlinsans"
+                    android:text="U"
+                    android:textSize="22sp" />
+
+                <Button
+                    app:backgroundTint="@null"
+                    android:id="@+id/button_v"
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/buttonalfabeth"
+                    android:textColor="@android:color/white"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:fontFamily="@font/berlinsans"
+                    android:text="V"
+                    android:textSize="22sp" />
+
+                <Button
+                    app:backgroundTint="@null"
+                    android:id="@+id/button_w"
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/buttonalfabeth"
+                    android:textColor="@android:color/white"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:fontFamily="@font/berlinsans"
+                    android:text="W"
+                    android:textSize="22sp" />
+
+                <Button
+                    app:backgroundTint="@null"
+                    android:id="@+id/button_x"
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/buttonalfabeth"
+                    android:textColor="@android:color/white"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:fontFamily="@font/berlinsans"
+                    android:text="X"
+                    android:textSize="22sp" />
+
+                <Button
+                    app:backgroundTint="@null"
+                    android:id="@+id/button_y"
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/buttonalfabeth"
+                    android:textColor="@android:color/white"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:fontFamily="@font/berlinsans"
+                    android:text="Y"
+                    android:textSize="22sp" />
+
+                <Button
+                    app:backgroundTint="@null"
+                    android:id="@+id/button_z"
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="24dp"
+                    android:background="@drawable/buttonalfabeth"
+                    android:textColor="@android:color/white"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:fontFamily="@font/berlinsans"
+                    android:text="Z"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frame_layout_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:cardCornerRadius="100dp"-->
+<!--        app:cardElevation="2dp">-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+<!--                android:layout_centerInParent="true"-->
+        <me.grantland.widget.AutofitTextView
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:padding="10dp"
+            android:background="@drawable/itemrecycler1"
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/berlinsans"
+            tools:text="H"
+            android:singleLine="true"
+            android:textSize="26sp"
+            autofit:minTextSize="26sp"/>
+
+        </RelativeLayout>
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+</FrameLayout>
+
+
+
+<!--        <me.grantland.widget.AutofitTextView-->
+<!--            android:id="@+id/text"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textColor="@color/colorPrimaryDark"-->
+<!--            android:layout_gravity="center"-->
+<!--            tools:text="Hello"-->
+<!--            android:fontFamily="@font/bubblegumsans"-->
+<!--            android:textStyle="bold"-->
+<!--            android:singleLine="true"-->
+<!--            android:maxLines="1"-->
+<!--            android:textSize="25sp"-->
+<!--            autofit:minTextSize="16sp"/>-->
+<!--        autofit:minTextSize="16sp"-->
+
+
+
+

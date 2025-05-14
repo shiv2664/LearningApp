@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:background="@drawable/twf_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layoutAnimation="@anim/layout_animation_fall_down"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="7dp"
+                    android:paddingEnd="7dp">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginEnd="256dp"
+                        android:fontFamily="@font/berlinsans"
+                        android:text="Kids Lingo"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="26sp" />
+
+                    <Button
+                        android:layout_alignParentEnd="true"
+                        android:id="@+id/button_help"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/helpbutton" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="32dp"
+                    android:fontFamily="@font/berlinsans"
+                    android:text="What you want to play today?"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="38sp" />
+
+                <RelativeLayout
+                    android:id="@+id/button_play_MatchMe"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:elevation="3dp"
+                    android:layout_marginTop="24dp">
+
+                    <ImageView
+                        android:layout_marginStart="18dp"
+                        android:layout_marginEnd="18dp"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/buttongreen"
+                        android:layout_height="150dp"/>
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottieanimalphabets"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:lottie_rawRes="@raw/abc"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="19dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="20dp"
+                        app:contentPadding="7dp">
+                        <TextView
+                            android:fontFamily="@font/berlinsans"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:text="   Match-Me  "
+                            android:textColor="@color/ungu"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/button_play_SpellMe"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:elevation="3dp"
+                    android:layout_marginTop="24dp">
+
+                    <ImageView
+                        android:layout_marginStart="18dp"
+                        android:layout_marginEnd="18dp"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/buttonorange"
+                        android:layout_height="150dp"/>
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottieanimMonuments"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:lottie_rawRes="@raw/jumble"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="19dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="20dp"
+                        app:contentPadding="7dp">
+                        <TextView
+                            android:fontFamily="@font/berlinsans"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:text="   Spell-Me  "
+                            android:textColor="@color/ungu"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_marginTop="50dp"
+                    android:id="@+id/back"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="13dp"
+                    android:layout_marginStart="15dp"
+                    app:backgroundTint="@null"
+                    android:background="@drawable/twf_back"
+                    android:text="" />
+             <!--   <com.google.android.gms.ads.AdView
+                    android:layout_gravity="center"
+                    xmlns:ads="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/adView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    ads:adSize="BANNER"
+                    ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+                </com.google.android.gms.ads.AdView>-->
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</layout>

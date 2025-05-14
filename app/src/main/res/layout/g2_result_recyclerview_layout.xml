@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:foreground="?attr/selectableItemBackgroundBorderless">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:fontFamily="@font/berlinsans"
+                android:gravity="center"
+                android:id="@+id/text_number"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:textColor="@color/colorWhite"
+                android:text="1"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="9">
+
+                <TextView
+                    android:fontFamily="@font/berlinsans"
+                    android:padding="10dp"
+                    android:id="@+id/text_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="How do you do?"
+                    android:layout_marginStart="10dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorWhite"/>
+
+                <TextView
+                    android:layout_below="@+id/text_question"
+                    android:fontFamily="@font/berlinsans"
+                    android:padding="10dp"
+                    android:id="@+id/text_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Its the answer"
+                    android:layout_marginStart="10dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorWhite" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--        <View-->
+        <!--            android:id="@+id/view_line"-->
+        <!--            android:layout_marginTop="65dp"-->
+        <!--            android:background="@color/lightgrey"-->
+        <!--            android:layout_marginStart="50dp"/>-->
+
+    </RelativeLayout>
+</layout>

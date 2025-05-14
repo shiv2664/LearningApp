@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.shivam.learningapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+<!--        <meta-data-->
+<!--            android:name="android.app.PendingIntent.FLAG_MUTABLE"-->
+<!--            android:value="true" />-->
+
+        <activity android:name="com.shivam.learningapp.AdvGames"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.shivam.learningapp.game3alphabet.LearnBodyParts"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.shivam.learningapp.game3alphabet.LearnColors"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.shivam.learningapp.ExerciseJumbledAlphabets"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.shivam.learningapp.ExercisesMatchMe"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.shivam.learningapp.game3alphabet.LearnMonuments"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.shivam.learningapp.AgeActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.shivam.learningapp.ResultActivityMain"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.shivam.learningapp.ChooseGame"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.shivam.learningapp.LevelsLearn"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.shivam.learningapp.game4jumbledalphabets.Game4JumbledAlphabets"
+            android:exported="true"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.shivam.learningapp.game3alphabet.G3ResultActivity"
+            android:exported="true"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.shivam.learningapp.game3alphabet.AlphabetsPlayground"
+            android:exported="true"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.shivam.learningapp.game3alphabet.LearnAlphabetActivity"
+            android:exported="true"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.shivam.learningapp.game2.beginner.G2ResultActivity"
+            android:exported="true"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.shivam.learningapp.game1.beginner.ResultsActivity"
+            android:exported="true"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.shivam.learningapp.game2.Game2Activity"
+            android:exported="true"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.shivam.learningapp.game2.beginner.G2LevelsActivityBeginners"
+            android:exported="true"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+
+            android:name="com.shivam.learningapp.game2.beginner.g2level5exercise.G2BeginnersLv5Exercise"
+            android:exported="true"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+
+            android:name="com.shivam.learningapp.game2.beginner.g2level4exercise.G2BeginnersLv4Exercise"
+            android:exported="true"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.shivam.learningapp.game2.beginner.g2level2exercise.G2BeginnersLv2Exercise"
+            android:exported="true"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.shivam.learningapp.game2.beginner.g2level3exercise.G2BeginnersLv3Exercise"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shivam.learningapp.game2.beginner.g2level1exercise.G2BeginnersLv1Exercise"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.shivam.learningapp.game1.beginner.lv5exercises.BeginnerLv5Exercise"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.shivam.learningapp.game1.beginner.lv4exercises.BeginnerLv4Exercise"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.shivam.learningapp.game1.beginner.lv3exercises.BeginnerLv3Exercise"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.shivam.learningapp.game1.beginner.lv2exercises.BeginnerLv2Exercise"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.shivam.learningapp.game1.beginner.lv1exercises.BeginnerLv1Exercise"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.shivam.learningapp.game2.G2LevelsActivity1"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.shivam.learningapp.game1.intermediate.IntermediateLevel2"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.shivam.learningapp.game1.intermediate.IntermediateLevelOne"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.shivam.learningapp.game1.pro.LevelsActivityPro"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.shivam.learningapp.game1.intermediate.LevelsActivityIntermediate"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shivam.learningapp.game1.beginner.LevelsActivityBeginners"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.shivam.learningapp.game1.LevelsActivity1"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.shivam.learningapp.TestActivity"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.shivam.learningapp.DashboardActivity"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shivam.learningapp.game1.Game1Activity"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.shivam.learningapp.RegistrationActivity"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/LoginAppTheme" />
+
+        <activity
+            android:name="com.shivam.learningapp.MainActivity"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.shivam.learningapp.LoginActivity"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.shivam.learningapp.SplashActivity"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+<!--        ca-app-pub-3940256099942544~3347511713  Sample-->
+      <!--  <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-8438387212221904~4561854820"/>-->
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/twf_background_blur">
+
+        <com.google.android.material.textfield.TextInputLayout
+           android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            app:boxStrokeWidth="2dp"
+            app:boxStrokeColor="@color/white"
+            app:boxCornerRadiusBottomEnd="20dp"
+            app:boxCornerRadiusTopEnd="20dp"
+            app:boxCornerRadiusBottomStart="20dp"
+            app:boxCornerRadiusTopStart="20dp"
+            android:id="@+id/email_holder"
+            android:hint="Enter your Age"
+            android:textColorHint="@color/white"
+            android:layout_marginTop="20dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:gravity="center"
+                android:fontFamily="@font/berlinsans"
+                android:id="@+id/age"
+                android:textColor="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/startButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            app:backgroundTint="@null"
+            android:background="@drawable/buttonorange"
+            android:text="Start Your Adventure"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:padding="7dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"/>
+
+
+<!--        <EditText-->
+<!--            android:id="@+id/nameEditText"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:layout_marginRight="5dp"-->
+<!--            android:background="#fff"-->
+<!--            android:textColorHint="#666"-->
+<!--            android:ems="10"-->
+<!--            android:padding="6dp"-->
+<!--            android:hint="Enter Your Name"-->
+<!--            android:layout_above="@+id/startButton"-->
+<!--            android:inputType="textCapWords|textPersonName"-->
+<!--            android:maxLength="30" />-->
+    </RelativeLayout>
+</layout>
